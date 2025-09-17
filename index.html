@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rai Barros Dev</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .fade-in {
+        animation: fadeInUp 0.8s ease forwards;
+      }
+      .fade-in-delay {
+        animation: fadeInUp 1s ease forwards;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-gray-800 text-white flex items-center justify-center min-h-screen"
+  >
+    <div class="text-center p-6 max-w-md w-full fade-in">
+      <!-- Avatar estilo Instagram -->
+      <div class="flex justify-center mb-4 fade-in-delay relative">
+        <div
+          class="p-[3px] rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600"
+        >
+          <img
+            src="https://github.com/RaiBrs.png"
+            alt="Foto de perfil"
+            class="rounded-full border-4 border-gray-900 shadow-lg hover:scale-105 transition-transform duration-300"
+          />
+        </div>
+      </div>
+
+      <!-- Nome -->
+      <h1 class="text-3xl font-bold fade-in">Rai Barros</h1>
+      <p class="text-gray-400 mb-2 fade-in-delay">Desenvolvedor de Software</p>
+      <p class="text-gray-400 mb-6 fade-in-delay">
+        Me acompanhe também em outras redes
+      </p>
+
+      <!-- Links sociais -->
+      <div class="flex justify-center gap-6 mb-8 fade-in-delay">
+        <a
+          href="https://github.com/RaiBrs"
+          target="_blank"
+          class="hover:text-gray-400 transition hover:scale-110 duration-300"
+        >
+          <i data-lucide="github" class="w-7 h-7"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/raibrs/"
+          target="_blank"
+          class="hover:text-gray-400 transition hover:scale-110 duration-300"
+        >
+          <i data-lucide="linkedin" class="w-7 h-7"></i>
+        </a>
+        <a
+          href="https://instagram.com/raibarros.dev"
+          target="_blank"
+          class="hover:text-gray-400 transition hover:scale-110 duration-300"
+        >
+          <i data-lucide="instagram" class="w-7 h-7"></i>
+        </a>
+      </div>
+
+      <!-- Rodapé -->
+      <footer class="text-sm text-gray-500 fade-in">
+        © 2025 Rai • Feito com ❤️
+      </footer>
+    </div>
+
+    <!-- Script para carregar os ícones -->
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
